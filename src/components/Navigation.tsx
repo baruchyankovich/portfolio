@@ -71,7 +71,7 @@ export default function Navigation() {
               className={`text-sm font-medium transition-colors duration-200 ${
                 activeSection === item
                   ? "text-white"
-                  : "text-gray-400 hover:text-white"
+                  : "text-gray-300 hover:text-white"
               }`}
             >
               {t.nav[item]}
@@ -141,7 +141,7 @@ export default function Navigation() {
                   className={`rounded-lg px-4 py-3 text-left text-sm font-medium transition-colors ${
                     activeSection === item
                       ? "bg-white/10 text-white"
-                      : "text-gray-400 hover:bg-white/5 hover:text-white"
+                      : "text-gray-300 hover:bg-white/5 hover:text-white"
                   }`}
                 >
                   {t.nav[item]}

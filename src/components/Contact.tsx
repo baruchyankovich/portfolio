@@ -29,7 +29,7 @@ export default function Contact() {
           <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
             {t.contact.title}
           </h2>
-          <p className="text-lg text-gray-400">{t.contact.subtitle}</p>
+          <p className="text-lg text-gray-300">{t.contact.subtitle}</p>
         </motion.div>
 
         <motion.div
@@ -44,13 +44,13 @@ export default function Contact() {
             variants={itemVariants}
             whileHover={{ scale: 1.02, borderColor: "rgba(255,255,255,0.25)" }}
             href="mailto:baruchyankovitz@gmail.com"
-            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition-colors"
+            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-md transition-colors"
           >
             <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400 to-cyan-400 text-xl">
               @
             </div>
             <div>
-              <p className="text-sm text-gray-400">{t.contact.email}</p>
+              <p className="text-sm text-gray-300">{t.contact.email}</p>
               <p className="font-medium text-white">baruchyankovitz@gmail.com</p>
             </div>
           </motion.a>
@@ -60,13 +60,13 @@ export default function Contact() {
             variants={itemVariants}
             whileHover={{ scale: 1.02, borderColor: "rgba(255,255,255,0.25)" }}
             href="tel:+972556782035"
-            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition-colors"
+            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-md transition-colors"
           >
             <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-emerald-400 text-xl">
               {"\u{1f4de}"}
             </div>
             <div>
-              <p className="text-sm text-gray-400">{t.contact.phone}</p>
+              <p className="text-sm text-gray-300">{t.contact.phone}</p>
               <p className="font-medium text-white">055-678-2035</p>
             </div>
           </motion.a>
@@ -78,7 +78,7 @@ export default function Contact() {
             href="https://github.com/baruchyankovich"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition-colors"
+            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-md transition-colors"
           >
             <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-gray-400 to-gray-600 text-xl">
               <svg className="h-6 w-6" fill="white" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <p className="text-sm text-gray-400">GitHub</p>
+              <p className="text-sm text-gray-300">GitHub</p>
               <p className="font-medium text-white">baruchyankovich</p>
             </div>
           </motion.a>
@@ -98,13 +98,13 @@ export default function Contact() {
             href="https://www.linkedin.com/in/baruch-yankuvitz/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition-colors"
+            className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-md transition-colors"
           >
             <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-xl font-bold text-white">
               in
             </div>
             <div>
-              <p className="text-sm text-gray-400">LinkedIn</p>
+              <p className="text-sm text-gray-300">LinkedIn</p>
               <p className="font-medium text-white">Baruch Yankovitz</p>
             </div>
           </motion.a>

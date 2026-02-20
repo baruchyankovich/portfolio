@@ -19,6 +19,12 @@ export const translations = {
       ],
       cta: "View Projects",
       contact: "Contact Me",
+      achievements: [
+        { value: "8+", label: "Production Apps" },
+        { value: "12+", label: "Technologies" },
+        { value: "6", label: "Languages" },
+        { value: "SaaS", label: "to Real-time" },
+      ],
     },
     about: {
       title: "About Me",
@@ -71,6 +77,12 @@ export const translations = {
       ],
       cta: "\u05dc\u05e4\u05e8\u05d5\u05d9\u05e7\u05d8\u05d9\u05dd",
       contact: "\u05e6\u05d5\u05e8 \u05e7\u05e9\u05e8",
+      achievements: [
+        { value: "8+", label: "\u05d0\u05e4\u05dc\u05d9\u05e7\u05e6\u05d9\u05d5\u05ea \u05d1\u05e4\u05e8\u05d5\u05d3\u05e7\u05e9\u05df" },
+        { value: "12+", label: "\u05d8\u05db\u05e0\u05d5\u05dc\u05d5\u05d2\u05d9\u05d5\u05ea" },
+        { value: "6", label: "\u05e9\u05e4\u05d5\u05ea \u05ea\u05db\u05e0\u05d5\u05ea" },
+        { value: "SaaS", label: "\u05e2\u05d3 Real-time" },
+      ],
     },
     about: {
       title: "\u05e7\u05e6\u05ea \u05e2\u05dc\u05d9",

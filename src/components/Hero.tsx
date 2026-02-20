@@ -53,7 +53,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-base sm:text-lg md:text-xl text-gray-400 mb-2 sm:mb-4 tracking-wide"
+          className="text-base sm:text-lg md:text-xl text-gray-300 mb-2 sm:mb-4 tracking-wide"
         >
           {t.hero.greeting}
         </motion.p>
@@ -108,6 +108,31 @@ export default function Hero() {
           >
             {t.hero.contact}
           </button>
+        </motion.div>
+
+        {/* Achievement badges */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 1.2 }}
+          className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto"
+        >
+          {t.hero.achievements.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: 1.4 + i * 0.15 }}
+              className="text-center rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm px-3 py-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+            >
+              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[#00d4ff] to-[#a855f7] bg-clip-text text-transparent">
+                {item.value}
+              </div>
+              <div className="text-xs sm:text-sm text-gray-400 mt-1">
+                {item.label}
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
 

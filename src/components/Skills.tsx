@@ -39,7 +39,7 @@ export default function Skills() {
           <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
             {t.skills.title}
           </h2>
-          <p className="text-lg text-gray-400">{t.skills.subtitle}</p>
+          <p className="text-lg text-gray-300">{t.skills.subtitle}</p>
         </motion.div>
 
         {/* Skills Grid */}
@@ -58,7 +58,7 @@ export default function Skills() {
                 scale: 1.03,
                 borderColor: "rgba(255, 255, 255, 0.25)",
               }}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-colors duration-300 hover:bg-white/[0.08]"
+              className="group rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur-md transition-colors duration-300 hover:bg-white/15"
             >
               {/* Category Name */}
               <h3 className={`mb-4 text-lg font-semibold ${category.color}`}>

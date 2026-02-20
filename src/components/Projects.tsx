@@ -30,7 +30,7 @@ export default function Projects() {
           <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
             {t.projects.title}
           </h2>
-          <p className="text-lg text-gray-400">{t.projects.subtitle}</p>
+          <p className="text-lg text-gray-300">{t.projects.subtitle}</p>
         </motion.div>
 
         <motion.div
@@ -45,7 +45,7 @@ export default function Projects() {
               key={project.id}
               variants={cardVariants}
               whileHover={{ y: -6 }}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:border-white/20 hover:bg-white/[0.08]"
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/10 backdrop-blur-md transition-all duration-300 hover:border-white/20 hover:bg-white/15"
             >
               {/* Gradient header */}
               <div
@@ -58,7 +58,7 @@ export default function Projects() {
                 <h3 className="mb-2 text-xl font-bold text-white">
                   {project.title[lang]}
                 </h3>
-                <p className="mb-4 text-sm leading-relaxed text-gray-400">
+                <p className="mb-4 text-sm leading-relaxed text-gray-300">
                   {project.description[lang]}
                 </p>
 

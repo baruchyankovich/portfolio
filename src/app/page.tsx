@@ -1,22 +1,25 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
-import dynamic from "next/dynamic";
+import { useState, useMemo, useEffect } from "react";
 import { Lang, translations } from "@/lib/i18n";
 import { LanguageContext } from "@/hooks/useLanguage";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+
 import Skills from "@/components/Skills";
+
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-
-const ParticleField = dynamic(() => import("@/components/ParticleField"), {
-  ssr: false,
-});
+import MouseGlow from "@/components/MouseGlow";
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>("en");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const contextValue = useMemo(
     () => ({
@@ -30,9 +33,8 @@ export default function Home() {
   return (
     <LanguageContext.Provider value={contextValue}>
       <div dir={lang === "he" ? "rtl" : "ltr"} className="relative min-h-screen">
-        <Suspense fallback={null}>
-          <ParticleField />
-        </Suspense>
+        {mounted && <ParticleFieldLazy />}
+        {mounted && <MouseGlow />}
 
         <div className="relative z-10">
           <Navigation />
@@ -45,4 +47,17 @@ export default function Home() {
       </div>
     </LanguageContext.Provider>
   );
+}
+
+function ParticleFieldLazy() {
+  const [Component, setComponent] = useState<React.ComponentType | null>(null);
+
+  useEffect(() => {
+    import("@/components/ParticleField").then((mod) => {
+      setComponent(() => mod.default);
+    });
+  }, []);
+
+  if (!Component) return null;
+  return <Component />;
 }
