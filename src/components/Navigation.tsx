@@ -84,6 +84,23 @@ export default function Navigation() {
             </button>
           ))}
 
+          {/* Contact shortcuts */}
+          <div className="flex items-center gap-1 rounded-lg border border-white/15 px-3 py-1.5">
+            <a
+              href="mailto:baruchyankovitz@gmail.com"
+              className="text-xs text-gray-300 hover:text-white transition-colors"
+            >
+              baruchyankovitz@gmail.com
+            </a>
+            <span className="text-gray-600 mx-1">|</span>
+            <a
+              href="tel:+972556782035"
+              className="text-xs text-gray-300 hover:text-white transition-colors"
+            >
+              055-678-2035
+            </a>
+          </div>
+
           {/* Language toggle */}
           <button
             onClick={() => setLang(lang === "en" ? "he" : "en")}
