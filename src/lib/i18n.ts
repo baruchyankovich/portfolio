@@ -9,22 +9,16 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      greeting: "Hey, I'm",
+      tagline: "I build production systems that actually work.",
       name: "Baruch Yankovitz",
-      roles: [
-        "Backend Developer",
-        "AI Solutions Builder",
-        "Vibe Coder",
-        "Full-Stack Engineer",
+      subtitle: "Backend Developer \u00b7 AI Builder \u00b7 8+ Production Apps",
+      proofPoints: [
+        { icon: "\u{1f4e6}", label: "SaaS Platforms" },
+        { icon: "\u26a1", label: "Real-time Systems" },
+        { icon: "\u{1f916}", label: "AI Automation" },
       ],
       cta: "View Projects",
       contact: "Contact Me",
-      achievements: [
-        { value: "8+", label: "Production Apps" },
-        { value: "12+", label: "Technologies" },
-        { value: "6", label: "Languages" },
-        { value: "SaaS", label: "to Real-time" },
-      ],
     },
     about: {
       title: "About Me",
@@ -67,22 +61,16 @@ export const translations = {
       contact: "\u05e6\u05d5\u05e8 \u05e7\u05e9\u05e8",
     },
     hero: {
-      greeting: "\u05d4\u05d9\u05d9, \u05d0\u05e0\u05d9",
+      tagline: "\u05d0\u05e0\u05d9 \u05d1\u05d5\u05e0\u05d4 \u05de\u05e2\u05e8\u05db\u05d5\u05ea \u05e4\u05e8\u05d5\u05d3\u05e7\u05e9\u05df \u05e9\u05d1\u05d0\u05de\u05ea \u05e2\u05d5\u05d1\u05d3\u05d5\u05ea.",
       name: "\u05d1\u05e8\u05d5\u05da \u05d9\u05e0\u05e7\u05d5\u05d1\u05d9\u05e5",
-      roles: [
-        "Backend Developer",
-        "AI Solutions Builder",
-        "Vibe Coder",
-        "Full-Stack Engineer",
+      subtitle: "Backend \u05de\u05e4\u05ea\u05d7 \u00b7 AI \u05d1\u05d5\u05e0\u05d4 \u00b7 8+ \u05d0\u05e4\u05dc\u05d9\u05e7\u05e6\u05d9\u05d5\u05ea \u05d1\u05e4\u05e8\u05d5\u05d3\u05e7\u05e9\u05df",
+      proofPoints: [
+        { icon: "\u{1f4e6}", label: "\u05e4\u05dc\u05d8\u05e4\u05d5\u05e8\u05de\u05d5\u05ea SaaS" },
+        { icon: "\u26a1", label: "\u05de\u05e2\u05e8\u05db\u05d5\u05ea Real-time" },
+        { icon: "\u{1f916}", label: "\u05d0\u05d5\u05d8\u05d5\u05de\u05e6\u05d9\u05d4 \u05e2\u05dd AI" },
       ],
       cta: "\u05dc\u05e4\u05e8\u05d5\u05d9\u05e7\u05d8\u05d9\u05dd",
       contact: "\u05e6\u05d5\u05e8 \u05e7\u05e9\u05e8",
-      achievements: [
-        { value: "8+", label: "\u05d0\u05e4\u05dc\u05d9\u05e7\u05e6\u05d9\u05d5\u05ea \u05d1\u05e4\u05e8\u05d5\u05d3\u05e7\u05e9\u05df" },
-        { value: "12+", label: "\u05d8\u05db\u05e0\u05d5\u05dc\u05d5\u05d2\u05d9\u05d5\u05ea" },
-        { value: "6", label: "\u05e9\u05e4\u05d5\u05ea \u05ea\u05db\u05e0\u05d5\u05ea" },
-        { value: "SaaS", label: "\u05e2\u05d3 Real-time" },
-      ],
     },
     about: {
       title: "\u05e7\u05e6\u05ea \u05e2\u05dc\u05d9",
