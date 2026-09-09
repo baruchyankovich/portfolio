@@ -48,7 +48,7 @@ export default function Hero() {
           className="flex items-center justify-center gap-4 mb-8 sm:mb-10"
         >
           <a
-            href="https://github.com/baruchyankovich"
+            href="https://github.com/baruchyankovitz"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-5 py-2.5 text-white hover:bg-white/15 hover:border-white/30 transition-all duration-300"
@@ -59,7 +59,7 @@ export default function Hero() {
             <span className="text-sm font-semibold">GitHub</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/baruch-yankuvitz/"
+            href="https://www.linkedin.com/in/baruch-yankovitz/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 rounded-full border border-blue-500/30 bg-blue-600/10 backdrop-blur-sm px-5 py-2.5 text-white hover:bg-blue-600/20 hover:border-blue-500/50 transition-all duration-300"
