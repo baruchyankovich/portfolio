@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "AI",
     "Full Stack",
     "React",
-    "Next.js",
+    
   ],
   openGraph: {
     title: "Baruch Yankovitz | Backend Developer & AI Solutions",
