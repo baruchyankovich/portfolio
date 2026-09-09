@@ -75,7 +75,7 @@ export default function Contact() {
           <motion.a
             variants={itemVariants}
             whileHover={{ scale: 1.02, borderColor: "rgba(255,255,255,0.25)" }}
-            href="https://github.com/baruchyankovich"
+            href="https://github.com/baruchyankovitz"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-md transition-colors"
@@ -87,7 +87,7 @@ export default function Contact() {
             </div>
             <div>
               <p className="text-sm text-gray-300">GitHub</p>
-              <p className="font-medium text-white">baruchyankovich</p>
+              <p className="font-medium text-white">baruchyankovitz</p>
             </div>
           </motion.a>
 
@@ -95,7 +95,7 @@ export default function Contact() {
           <motion.a
             variants={itemVariants}
             whileHover={{ scale: 1.02, borderColor: "rgba(255,255,255,0.25)" }}
-            href="https://www.linkedin.com/in/baruch-yankuvitz/"
+            href="https://www.linkedin.com/in/baruch-yankovitz/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-md transition-colors"
